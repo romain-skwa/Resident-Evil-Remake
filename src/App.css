@@ -72,9 +72,8 @@ li{list-style-type: none;}
     
     align-items: center;
 
-    border: 1px solid yellow;
     padding: 15px;
-    width: 500px;
+    width: 480px;
     background: url(../../public/background/umbrella.jpg);
     background-position: center;
     background-size: cover;
@@ -91,4 +90,40 @@ li{list-style-type: none;}
     padding: 5px 10px;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+.checkboxStars{
+    width: 81%;
+    padding: 10px;
+    background-color: azure;
+    display: flex;
+    box-sizing: content-box;
+}
+.creation *{
+    opacity: 40%;
+}
+.creation:hover *{
+    transition-duration: 1s;
+    opacity: 100%;
+}
+.checkboxStars p{
+    padding: 5px;
+}
+.petite{
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: beige;
+    border-radius: 5px;
+}
+#stars{
+    margin-left: 15px;
+}
+.alphaOuBravo{
+    background-color: aqua;
+    width: 61%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#avis{
+    margin-top: 10%;
 }

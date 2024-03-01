@@ -9,7 +9,7 @@ export default function Personnages(
         quelMode,
         membreDesStars = true,
         infoEquipe = "Alpha", 
-        listeJeux =[""], 
+        listeJeux =["Resident Evil"], 
         filmOuPas =["Faut voir"],
         badge,
         jeChoisis,
@@ -37,7 +37,7 @@ export default function Personnages(
             <div className="listeJeux">
                 Personnage présent dans : <br />
                 <ul>
-                    <li>Resident Evil</li>
+                    {/*<li>Resident Evil</li>*/}
                     {listeJeux.map((jeu) => (
                         <li key={jeu}>{jeu}</li>
                     ))}

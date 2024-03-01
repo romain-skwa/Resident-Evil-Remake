@@ -16,7 +16,7 @@ export default function PresentationPersos(){
             imagePerso="../../public/portrait/jill-valentine.png"
             nom="Jill Valentine"
             ajoutPerso="Jill est mon personnage préféré."
-            listeJeux={["Resident Evil 3", "Resident Evil 5"]}
+            listeJeux={["Resident Evil", "Resident Evil 3", "Resident Evil 5"]}
             quelMode="Mercenaires"
             filmOuPas={["Resident Evil: Degeneration","Resident Evil : Death Island"]}
             badge={badgePour == "Jill Valentine"}
@@ -28,7 +28,7 @@ export default function PresentationPersos(){
             imagePerso="../../public/portrait/chris-redfield.png"
             nom="Chris Redfield"
             ajoutPerso="J&apos;aime aussi ce personnage."
-            listeJeux={["Resident Evil : Code Veronica", "Resident Evil 5", "Resident Evil 6"]}
+            listeJeux={["Resident Evil", "Resident Evil : Code Veronica", "Resident Evil 5", "Resident Evil 6"]}
             quelMode="Mercenaires & Réunion de mercenaires"
             filmOuPas={["Resident Evil: Degeneration", "Resident Evil: Vendetta", "Resident Evil : Death Island"]}
             badge={badgePour == "Chris Redfield"}
@@ -52,7 +52,7 @@ export default function PresentationPersos(){
             nom="Albert Wesker"
             ajoutPerso="Scientifique en plus d&apos;être membre des stars."
             ligneSup="Il est également un traitre."
-            listeJeux={["Resident Evil 5", "Resident Evil : Code Veronica"]}
+            listeJeux={["Resident Evil", "Resident Evil 5", "Resident Evil : Code Veronica"]}
             quelMode="Mercenaires"
             filmOuPas={["Non"]}
             badge={badgePour == "Albert Wesker"}
@@ -65,7 +65,7 @@ export default function PresentationPersos(){
             nom="Rebecca Chambers"
             infoEquipe = "Bravo"
             ajoutPerso="C&apos;était super de lui consacrer un jeu."
-            listeJeux={["Resident Evil 0"]}
+            listeJeux={["Resident Evil 0","Resident Evil",]}
             quelMode="Réunion de mercenaires"
             filmOuPas={["Resident Evil : Death Island"]}
             badge={badgePour == "Rebecca Chambers"}
