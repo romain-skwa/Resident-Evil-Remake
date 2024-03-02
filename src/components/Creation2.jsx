@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Personnages from "./Personnages";
+import style from "./Creation.module.css";
 
 export default function CreationPerso(){
     // State ------------------------------------------------------------------------------------
@@ -65,7 +66,7 @@ export default function CreationPerso(){
                 filmOuPas = {listeFilms}
                 />
 
-            <div className="creation">
+            <div className={style.creation}>
                 <h3>Crée ton propre personnage</h3>
 
                 {/*----------- IMAGE --------*/}
@@ -89,9 +90,9 @@ export default function CreationPerso(){
                 />
 
                 {/*----------- MEMBRE DES STARS ?  --------*/}
-                <div className="checkboxStars">
+                <div className={style.checkboxStars}>
                 <p>Ce personnage est-il membre des Stars ?</p>
-                    <div className="petite">
+                    <div className={style.petite}>
                         <label htmlFor="stars">Oui</label>
                         <input type="checkbox" id="stars" name="stars" 
                             checked={starsOuPas} // Deux valeurs possibles : true / false
@@ -101,7 +102,7 @@ export default function CreationPerso(){
                 </div>
                 
                 {/*----------- ALPHA ou BRAVO --------*/}
-                <div className="alphaOuBravo">
+                <div className={style.alphaOuBravo}>
                     <div>
                         <input type="radio" id="Alpha" name="quelleEquipe" 
                                value="Alpha"

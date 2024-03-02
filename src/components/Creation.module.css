@@ -1,0 +1,73 @@
+.creation{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    padding: 15px;
+    width: 480px;
+    background: url(../../public/background/umbrella.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.creation h3{
+    text-align: center;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-shadow: 0 0 20px red;
+}
+#nom{
+    height: 25px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+.checkboxStars{
+    width: 408px;
+    padding: 10px;
+    background-color: azure;
+    display: flex;
+    box-sizing: content-box;
+}
+.lesChamps{    display: flex;
+    flex-direction: column;
+    
+    align-items: center;}
+/*
+.lesChamps *{
+    transition-duration: 10s;
+    opacity: 90%;
+    margin: 0 auto;
+}
+.lesChamps:hover *{
+    transition-duration: 0.5s;
+    opacity: 100%;
+}
+*/
+.checkboxStars p{
+    padding: 5px;
+}
+.petite{
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: beige;
+    border-radius: 5px;
+}
+.petite label {
+    background-color: brown;
+    padding: 0 15px;
+}
+#stars{
+    margin-left: 15px;
+}
+.alphaOuBravo{
+    background-color: aqua;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#avis{
+    margin-top: 10%;
+}

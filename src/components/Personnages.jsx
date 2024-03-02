@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 
 export default function Personnages(
     {
@@ -18,16 +19,47 @@ export default function Personnages(
     console.log(info);
     // State
     const [modeMercenaire, setModeMercenaire] = useState();
-
     const [dansFilm, setDansFilm] = useState(false);
-
+    const [afficherModale, setAfficherModale] = useState(false);
+    // Fonction
+    const fenetre = () => {
+        setAfficherModale(true);
+    }
     return(        
         <div className="encadrePersonnage" >
             <img className="imagePersonnage" src={imagePerso} alt={`${nom} portrait`} />
 
             <h2 onClick={() => jeChoisis(nom)}>{nom}</h2>
 
-          {membreDesStars &&   <p className="membre">Membre de l&apos;équipe {infoEquipe} des S.T.A.R.S.</p> }
+            {afficherModale && createPortal(
+            <div
+                style={{
+                    background: "rgba(0, 0, 0, 0.9)",
+                    position: "absolute",
+                    bottom: 0,
+                    right: 0,
+                    top: 0,
+                    left: 0,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    color: "black",
+                }}
+                onClick={() => {
+                    setAfficherModale(false);
+                }}
+            >
+                <div style={{ background: "url(../../public/background/jill.jpg)" }}>
+                    <img src="../../public/background/jill.jpg" alt="Arrière plan RE1 Jill" />
+                </div>
+            </div>, document.querySelector("body"),
+            )}
+
+          {membreDesStars &&   
+          <p className="membre" onClick={(apparition) => fenetre(apparition)}>
+            Membre de l&apos;équipe {infoEquipe} des S.T.A.R.S.
+           </p>
+           }
 
             <div className="monAvis">
                 <p>{ajoutPerso}</p>
@@ -69,5 +101,7 @@ export default function Personnages(
             </div>
             <p>{badge === true ? "Vous avez décerné à " + nom + " le badge du personnage préféré." : null}</p>
         </div>
+  
     )
 }
+//<div onClick={{e} => e.stopPropagation(); autreFonction()}>Bouton</div>
